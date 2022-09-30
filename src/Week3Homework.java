@@ -7,7 +7,7 @@ public class Week3Homework {
 
 //		1.	Create an array of int called ages that contains the following values: 3, 9, 23, 64, 2, 8, 28, 93.
 		
-			int[] ages = {3, 9, 23, 64, 2, 8, 28, 93};
+			int[] ages = {3, 9, 23, 64, 10, 2, 8, 28, 93};
 		
 			
 //			a.	Programmatically subtract the value of the first element in the array from the value in the last element of the array (i.e. do not use ages[7] in your code). Print the result to the console.  
@@ -56,7 +56,7 @@ public class Week3Homework {
 
 			
 			
-//		b.	Use a loop to iterate through the array again and concatenate all the names together, separated by spaces, and print the result to the console.4
+//		b.	Use a loop to iterate through the array again and concatenate all the names together, separated by spaces, and print the result to the console.
 			
 			String allNames = "";
 			
@@ -71,13 +71,13 @@ public class Week3Homework {
 //		3.	How do you access the last element of any array?
 			
 				// You can access the last element in any array, by calling on the array name and in the square brackets [] input the array length minus 1.
-				// For example, in the names array we can call the last element by names[names.length -1]. 
+				// For example, in the names array we can access the last element by names[names.length -1]. 
 			
 			
 //		4.	How do you access the first element of any array?
 			
-				// As the first element of an array is denoted by zero. we can access the first element of an a
-				// For example, the first element of our names array would be names[0]
+				// As the first element of an array is indexed as zero. We can access the first element of an array by calling on the array name and in the square bracket input 0. 
+				// For example, the first element of our names array would be names[0].
 			
 		
 			
@@ -140,7 +140,7 @@ public class Week3Homework {
 			
 			//12. 
 			
-			boolean temp = false;
+			boolean temp = true;
 			double money = 12.53;
 			
 			System.out.println("Test Method 12: " + willBuyDrink(temp, money));
@@ -251,6 +251,11 @@ public class Week3Homework {
 			
 //		13.	Create a method of your own that solves a problem. In comments, write what the method does and why you created it.
 		
+					//I created a method that takes an array of doubles, called grades and would return your average grade as well as 
+					// if you were passing said course (presuming that passing would be 70% or above. I created this method because
+					// I wanted something that would have a multiple step method that would take an array of doubles and grades were 
+					// a straightforward way to accomplish that. 
+	
 	public static String isGradeAveragePassing(double[] grades) {
 		
 		double passingGrade = 70.0;
@@ -263,9 +268,9 @@ public class Week3Homework {
 		double averageGrade = sumGrade/grades.length;
 		
 		if (averageGrade >= passingGrade) {
-			return "Your grade average is: " + averageGrade + ". Keep up the good work!";
+			return "Your grade average is: " + averageGrade + ". You are passing. Keep up the good work!";
 		} else {
-			return "Your grade average is: " + averageGrade + ". Better study more.";
+			return "Your grade average is: " + averageGrade + ". You are not passing. Better study more.";
 		}
 		
 		
